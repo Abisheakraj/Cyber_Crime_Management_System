@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage_dbms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <table style="border-style: hidden;">
+            <tr>
+              <td><img src="national-emblem-of-india-satyamev-jayate-vector-25883 (1).jpg"></td>
+            
+              <td><h2 style="color: white;">
+                Cyber Crimes (State/UTs)-2020 <br>
+                National Crime Records Bureau
+              </h2></td>
+            </tr>
+          </table>
+  
+        </div>
+        <ul>
+          <li><a href="homepage_dbms.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <style>
+      button{
+        background-color: transparent;
+        width: 2cm;
+        height: 0.8cm;
+        margin-top: 20px;
+        border-color: gray;
+        border: solid;
+        border-width: 2px;
+        color: white;
+        transition: 800ms;
+        border-radius: 3px;
+      }
+      button:hover{
+        background-color: white;
+        color: black;
+        transition: 800ms;
+      }
+      body{
+        background-color: gray;
+        color: white;
+      }
+      input{
+        background-color: rgb(225, 224, 224);
+        border: solid;
+        border-width: 1px;
+        height: 0.8cm;
+        margin-right: 10px;
+        border-radius: 3px;
+      }
+    </style>
+
+   </head>
+<body>
+  <div style="padding-left: 1cm; margin-top: 1cm;">
+  <h2>Fill the values in the respective tables and click add to add data:</h2>
+  <div>
+      <h1 style="margin-top:15px ;margin-bottom: 10px;">crime</h1>
+
+      <form action="add_data/add_data1.php" method="POST"> 
+        <input type="text" name="case_id" placeholder="add case id">
+        <input type="text" name="subject" placeholder="add subject">
+        <input type="text" name="motive" placeholder="add motive">
+        <input type="text" name="status" placeholder="add status">
+        <input type="date" name="c_date" placeholder="add c_date">
+        <input type="text" name="location" placeholder="add location"><br>
+        <button type="submit" name="submit">add</button><br><br>
+      </form>
+
+  </div>
+  <div>
+    <h1 style="margin-top:15px ;margin-bottom: 10px;">victim</h1>
+    <form action="add_data/add_data2.php" method="post"> 
+      <input type="text"  name="v_id" placeholder="add v id">
+      <input type="text"  name="vname" placeholder="add vname">
+      <input type="date"  name="vdob" placeholder="add vdob">
+      <input type="text"  name="vgender" placeholder="add vgender">
+      <input type="tel"  name="vphone" placeholder="add vphone"><br>
+      <button type="submit" name="submit">add</button><br><br>
+    </form>
+</div>
+<div>
+  <h1 style="margin-top:15px ;margin-bottom: 10px;">vadd</h1>
+  <form action="add_data/add_data3.php" method="POST" > 
+    <input type="number"  name="vpincode" placeholder="add vpincode">
+    <input type="text"  name="vcity" placeholder="add vcity">
+    <input type="text"  name="vstate" placeholder="add vstate"><br>
+    <button>add</button><br><br>
+  </form>
+</div>
+<div>
+    <h1 style="margin-top:15px ;margin-bottom: 10px;">criminal</h1>
+    <form action="add_data/add_data4.php" method="POST" > 
+      <input type="text"  name="c_id" placeholder="add c id">
+      <input type="text"  name="cname" placeholder="add cname">
+      <input type="date"  name="cdob" placeholder="add cdob">
+      <input type="text"  name="cgender" placeholder="add cgender">
+      <input type="tel"  name="cphone" placeholder="add cphone"><br>
+      <button>add</button><br><br>
+    </form>
+</div>
+<div>
+  <h1 style="margin-top:15px ;margin-bottom: 10px;">cadd</h1>
+  <form action="add_data/add_data5.php" method="POST" > 
+    <input type="number"  name="cpincode" placeholder="add cpincode">
+    <input type="text"  name="ccity" placeholder="add ccity">
+    <input type="text"  name="cstate" placeholder="add cstate"><br>
+    <button>add</button><br><br>
+  </form>
+</div>
+<div>
+    <h1 style="margin-top:15px ;margin-bottom: 10px;">police</h1>
+    <form action="add_data/add_data6.php" method="POST" > 
+      <input type="text"  name="p_id" placeholder="add p id">
+      <input type="text"  name="pname" placeholder="add pname">
+      <input type="date"  name="pdob" placeholder="add pdob">
+      <input type="text"  name="pgender" placeholder="add pgender">
+      <input type="tel"  name="pphone" placeholder="add pphone"><br>
+      <button>add</button><br><br>
+    </form>
+    
+</div>
+<div>
+  <h1 style="margin-top:15px ;margin-bottom: 10px;">padd</h1>
+  <form action="add_data/add_data7.php" method="POST" > 
+    <input type="number"  name="ppincode" placeholder="add ppincode">
+    <input type="text"  name="pcity" placeholder="add pcity">
+    <input type="text"  name="pstate" placeholder="add pstate"><br>
+    <button>add</button><br><br>
+  </form>
+</div>
+<div>
+    <h1 style="margin-top:15px ;margin-bottom: 10px;">witness</h1>
+    <form action="add_data/add_data8.php" method="POST" > 
+      <input type="text"  name="w_id" placeholder="add w id">
+      <input type="text"  name="wname" placeholder="add wname">
+      <input type="tel"  name="wphone" placeholder="add wphone"><br>
+      <button>add</button><br><br>
+    </form>
+</div>
+<div>
+  <h1 style="margin-top:15px ;margin-bottom: 10px;">wadd</h1>
+  <form action="add_data/add_data9.php" method="POST" > 
+    <input type="number"  name="wpincode" placeholder="add wpincode">
+    <input type="text"  name="wcity" placeholder="add wcity">
+    <input type="text"  name="wstate" placeholder="add wstate"><br>
+    <button>add</button><br><br>
+  </form>
+</div>
+
+<div>
+    <h1 style="margin-top:15px ;margin-bottom: 10px;">crime head</h1>
+    <form action="add_data/add_data10.php" method="POST" > 
+      <input type="text"  name="ch_id" placeholder="add ch_id">
+      <input type="text"  name="chname" placeholder="add chname">
+      <input type="text"  name="ch_act" placeholder="add ch_act">
+      <input type="number"  name="ch_amount" placeholder="add ch_amount"><br>
+      <button>add</button><br><br>
+    </form>
+    
+</div>
+<div>
+    <h1 style="margin-top:15px ;margin-bottom: 10px;">main</h1>
+    <form action="add_data/add_data11.php" method="POST" > 
+      <input type="text"  name="c_id" placeholder="c_id">
+      <input type="text"  name="v_id" placeholder="add v_id">
+      <input type="text"  name="p_id" placeholder="add p_id">
+      <input type="text"  name="ch_id" placeholder="add ch_id">
+      <input type="text"  name="w_id" placeholder="add w_id"><br>
+      <button>add</button><br><br>
+    </form>
+    
+</div>
+</div>
+  </body>
+  </html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage_dbms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+        body{
+            background-color: #5b5b5b;
+            align-content: center;
+        }
+        .data{
+            text-align: center;
+            background-color: white;
+            height: 10cm;
+            width:20cm ;
+            padding-top: 15px;
+            margin-left: 50vh;
+            margin-top: 3cm;
+        }
+        .but button{
+            margin-top: 2cm;
+            margin-left: 10px;
+            height: 55px;
+            width: 170px;
+            border-radius: 5px;
+            border: none;
+            border: 2px solid white;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0 10px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        .but button:first-child{
+            color: #fff;
+            background: none;
+        }
+        .but button:first-child:hover{
+            background: white;
+            color: black;
+        }
+        .but button:last-child{
+            color: #fff;  
+            background: none;
+        
+        }
+        .but button:last-child:hover{
+            background: white;
+            color: black; 
+        }
+        th,td{
+            padding: 5px;
+        }
+        .filter input{
+            width: 8cm;
+            height: 0.8cm;
+        }
+        .filter button{
+            height: 0.8cm;
+            width: 2cm;
+            padding: 2px;
+            margin-left: 10px;
+        }
+
+        .bu{
+            margin-top: 2cm;
+            margin-left: 20px;
+            margin-bottom: 3cm;
+            height: 40px;
+            width: 120px;
+            border-radius: 5px;
+            border: none;
+            border: 2px solid white;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0 10px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        .bu:first-child{
+            color: #fff;
+            background: none;
+        }
+        .bu:first-child:hover{
+            background: rgb(0, 0, 0);
+            color: black;
+        }
+        .bu:last-child{
+            color: #fff;  
+            background: none;
+        
+        }
+        .bu:last-child:hover{
+            background: rgb(0, 0, 0);
+            color: black; 
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+          <div class="logo">
+            <table style="border-style: hidden;">
+              <tr>
+                <td><img src="national-emblem-of-india-satyamev-jayate-vector-25883 (1).jpg"></td>
+              
+                <td><h2 style="color: white;">
+                  Cyber Crimes (State/UTs)-2020 <br>
+                  National Crime Records Bureau
+                </h2></td>
+              </tr>
+            </table>
+    
+          </div>
+          <ul>
+            <li><a href="homepage_dbms.html">Home</a></li>
+            <li><a href="homepage_dbms.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+    </nav>
+
+
+    <div class="data">
+        <center>
+        <table align="center" style="margin: 50px auto;">
+            <tr>
+              <th>S_name</th>
+              <th>Gambling</th>
+              <th>Lotteries</th>
+              <th>Copyright</th>
+              <th>Trademark</th>
+              <th>Other_SLL</th>
+            </tr>
+            <tr>
+                <td>Maharashtra</td>
+                <td>100</td>
+                <td>78</td>
+                <td>49</td>
+                <td>33</td>
+                <td>59</td>
+            </tr>
+            <tr>
+                <td>Andhra Pradesh</td>
+                <td>78</td>
+                <td>37</td>
+                <td>40</td>
+                <td>20</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Karnataka</td>
+                <td>90</td>
+                <td>88</td>
+                <td>72</td>
+                <td>75</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td>Kerala</td>
+                <td>55</td>
+                <td>39</td>
+                <td>29</td>
+                <td>30</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Madhya Pradesh</td>
+                <td>62</td>
+                <td>43</td>
+                <td>40</td>
+                <td>20</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>Rajasthan</td>
+                <td>32</td>
+                <td>25</td>
+                <td>23</td>
+                <td>24</td>
+                <td>30</td>
+            </tr>
+        </table>
+    </center>
+        <div class="but">
+            <a href=""><button>SLL</button></a>
+            <a href=""><button>IPC</button></a>
+            <a href=""><button>ITC</button></a>
+        </div>
+        <br><br>
+
+        <div class="filter">
+            <form id="form"> 
+                <input type="search" id="query" name="q" placeholder="Search crimewise">
+                <button>Filter</button><br><br>
+                <input type="search" id="query" name="q" placeholder="Search state wise">
+                <button>Filter</button><br><br>
+                <input type="search" id="query" name="q" placeholder="Search date wise">
+                <button>Filter</button><br><br><br><br>
+    </div>
+
+ 
+    
+</body>
+</html>
